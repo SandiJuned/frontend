@@ -1,0 +1,111 @@
+<!-- Waw! saya kagum kamu dengan semangatmu yang mau membuka dan membaca kode saya. Saya akan berusaha semaksimal mungkin agar kamu dapat dengan mudah memahami kode ini :)-->
+
+<!-- CARA MEMBACA DOKUMENTASI KODE -->
+<!-- Penjelasan disini adalah penjelasan teknik ya. Jika kalian ingin penjelasan teory kalian bisa lihat ditampilan web, e-book, atau vidio di youtube atau akun tiktokku ya.-->
+<!-- Untuk membuat kamu semakin paham saya akan menyimpan komen di setiap tag agar kamu mengerti. -->
+<!-- Dan untuk penjelasanya akan saya taruh di dalam kotak. maksudnya seperti ini: -->
+<!--================================================================================================================-->
+<!--=                                                                                                              =-->
+<!--=                                                                                                              =-->
+<!--=                                                                                                              =-->
+<!--================================================================================================================-->
+<!-- Yap mungkin kurang lebih seperti itu selamat belajar (emot api).-->
+
+
+<!-- A. STRUKTUR HTML DASAR -->
+<!-- Ini adalah struktrur dasar HTML kamu akan menemukan artinya seiring membaca kodingan ini:)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+-->
+
+
+
+<!DOCTYPE html><!-- Bagian paling awal di struktur HTML ini mendeklaraasikan bahwa ini adalah file html 5. Tidak perlu memikirkan ini. Intinya kalian wajib menulis ini di setiap file HTML yang kalian buat.-->
+
+<html lang="en"> <!-- Tag induk atau root semua kode html berada dalam element html ini. Karena html ditulis secara nested atau saling bertumpuk mungkin seperti sebuah lemari yang didalamnya terdapat beberapa kotak. Untuk baju, celana, kaus kaki, dan jaket. dan juga dalam kotak baju itu bisa ada beberapa kotak lagi didalamnya yang berisi kota baju panjang dan baju pendek. Mungkin seperti itu analoginya kira-kira. -->
+
+<head><!-- Semua pemformatan dokumen berada didalam element head ini. Ini bekerja seperti sebuah kop surat kurang lebih-->
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Belajar HTML</title><!-- Tag ini berfungsi untuk membuata judul halaman yang ditampilkan di tab halaman. -->
+
+    <link rel="stylesheet" href="style.css"><!-- Ini berfungsi untuk -->
+</head>
+
+<body><!-- Body atau tubuh adalah bagian html yang akan menampilkan semua konten yang ingin kita tampilkan di layar browser.-->
+
+    <!-- Heading atau judul kaliamat memilikki kode h dalam html. heading memiliki 6 tingkatan dari h1 sampai h2, yang berarti judul, judul bab, sub-judul bab, dan seterusnya. Berikut contohny.-->
+    <h1>Ini adalah heading 1</h1>
+    <h2>Ini adalah heading 2</h2>
+    <h3>Ini adalah heading 3</h3>
+    <h4>Ini adalah heading 4</h4>
+    <h5>Ini adalah heading 5</h5>
+    <h6>Ini adalah heading 6</h6>
+
+    <!-- Hampir semua hal yang ditampilkan dalam web adalah kalimat. Untuk membuat kalimat kita perlu membuat paragraf. Untuk membuat paragraf di html kita bisa menggunakan tag <p>isi</p>. Kalian bisa menulis paragraf, kalimat, ataupun huruf pada bagian dalam tag-->
+    <p>Ini adalah paragraf paragraf di buat dengan tag &#60;p&#62; dan ditutup dengan &#60;&#47;p&#62; </p>
+
+    <!-- Membuat coment. Pada semua jenis pemrograman coment adalah hal penting karena ini digunakan untuk menendai kode ataupun melakukan sebuah dokumentasi. BTW teks hijau yang kalian baca ini adalah sebuah koment. UNtuk membuat koment di html kalian tinggal mengetik kurung buka siku(<) di ikuti tanda seru(!) dan setrip dua kali(--) dan di akhiri dengan setrip dua kali(--) dan kurung tutup siku(>). -->
+
+    <!-- HTML kontent area-->
+    <!-- Mungkin biasa di sebut sebagai sematik html. Disini kita akan membuat konten area main. Main adalah bagian utama pada sebuah website. Contoh jika kamu pernah melihat website berita akan ada banyak hal yang di tampilkan seperti beberapa tombol menu di bagian atas(navbar), dan juga catatan kaki (footer) yang biasanya terletak paling bawah. Artikel berita yang kalian baca adalah konten yang dibungkus dalam elemen maint tersebut.-->
+
+    <main><!-- Ini adalah main di dalamnya terdapat konten utama-->
+
+        <!-- Menampilkan Gambar-->
+        <!-- Untuk menampilkan gambar dihtml kita bisa menggunakan tag <img/>. Tidak seperti tag lainya tag img tidak memiliki tag penutup in disebut tag kosong. Sebagai gantinya kita akan memasukan atribut ke tag ini-->
+
+        <img src="https://img.freepik.com/free-vector/content-structure-concept-illustration_114360-5252.jpg?t=st=1716212865~exp=1716216465~hmac=cad03f1deeba5e748dac231e3cfc7af27ba38a9a9801beef5e25271d6762ad3b&w=740" alt="Gambar ilustrasi website devloper">
+        <!-- Penjelasan kode diatas
+            - img : adalah tag untuk menampilkan gambar
+            - src : adalah atribut untuk menentukan sumber gambar berasal bisa dari penyimpanan lokal atau di internet.
+            - alt : berisi penjelasan singkat tentang gambar. ini tidak wajib hanya saja ini akan membantu apabila gambar kita tidak dapat muncul, dan alt inilah yang akan 
+                    muncul sebagai ketaerangan tentang gambar. Dan ini juga membantu untuk pengguna yang tuna netra.
+        -->
+
+        <!-- Membuat list di HTML-->
+        <!-- Ada dua jenis list di html yaitu unorderlist dan orderlist. Mari kita buat! -->
+
+        <!-- Membuat unorder list-->
+        <!-- Untuk membuat unorder list kita memerlikan tag ul untuk mendeklarasikan bahwa ini adalah unorderlist kemudian didalam tag ul kita isi dengan tag li. Li berguna untuk membuat urutan list. Mari lihat contohnya di bawah ini.  -->
+
+
+        <p>Kenapa kalian harus belajar tentang HTML</p>
+        <ul>
+            <Li>Karena HTML mudah.</Li>
+            <li>Komponen penting penyusun website.</li>
+            <Li>Terdapat banyak sumber belajar.</Li>
+            <li>Dan memiliki komunitas yang luas.</li>
+        </ul>
+
+        <p>Hal yang harus kalian pelajari setelah mempelajari HTML.</p>
+        <ol>
+            <li>CSS, ini berguna untuk membuat tampilan web menjadi lebih menarik.</li>
+            <li>Javascript, berguna agar websitemu menjadi interaktif. Dan jugan banyak kegunaan lainya.</li>
+            <li>Pelajari frame work css seperti tailwind css, dan boostrap.</li>
+            <li>Pelajari juga framework Javascript seperti reactjs.</li>
+        </ol>
+    
+        <form action="/kontol">
+            <input type="radio" name="pilihan" id="">a
+            <input type="radio" name="pilihan" id="">b
+            <input type="radio" name="pilihan" id="">c
+            <input type="text" name="" id="" required>
+            <button type="submit">submit</button>
+        </form>
+    </main>
+    
+</body>
+</html>
